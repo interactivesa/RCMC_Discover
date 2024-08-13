@@ -222,6 +222,7 @@ $(document).ready(function () {
 
 
 
+// start numbers counter
 
 jQuery(function ($) {
   "use strict";
@@ -247,13 +248,24 @@ jQuery(function ($) {
 });
 
 
-
-// $(".contact-toggle").on("click", function () {
-//   this.toggleClass("show");
-// });
+// contact us toggle btn
 
 $('.contact-toggle').click(function(){
   $(this).toggleClass("show");
-  // $('.contact-toggle .closed-btn').fadeToggle( "slow", "linear" )
-  // $('.contact-toggle .opened-contact').fadeToggle( "slow", "linear" )
 });
+
+
+// fancybox 
+
+Fancybox.bind("[data-fancybox]", {
+  // Transition effect when changing gallery items
+  Carousel: {
+    transition: "slide",
+  },
+  // Disable image zoom animation on opening and closing
+  Images: {
+    zoom: false,
+  },
+  // Custom CSS transition on opening
+  showClass: "f-fadeIn",
+ });

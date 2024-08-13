@@ -1951,6 +1951,356 @@ footer .last-links ul li:last-child::after {
   display: none !important;
 }
 
+.breadcrumb {
+  height: 60px;
+  background-color: #F1F1F1;
+  margin-bottom: 42px;
+}
+
+.breadcrumb .items {
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.breadcrumb .items li {
+  list-style: none;
+}
+
+.breadcrumb .items li .home img {
+  width: 20px;
+}
+
+.breadcrumb .items li a {
+  font-size: 14px;
+  font-family: "Suisse-R";
+  color: #A5A3A8;
+  margin-right: 5px;
+  position: relative;
+  padding-right: 35px;
+}
+
+.breadcrumb .items li a::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  height: 12px;
+  width: 6px;
+  background-image: url(../images/shared/breadcrumb-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.breadcrumb .items li span {
+  font-size: 14px;
+  color: #6C757D;
+}
+
+.pageTitle {
+  height: 185px;
+  background-color: transparent;
+  background-image: url(../images/shared/breadcrumb-img.jpg);
+  position: relative;
+}
+
+.pageTitle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(48, 48, 48, 0.45);
+}
+
+.pageTitle h2 {
+  font-size: 35px;
+  font-family: "Suisse-B";
+  color: #ffffff;
+  padding-top: 70px;
+  position: relative;
+}
+
+.on-pos {
+  padding-bottom: 145px;
+}
+
+.on-pos .img-box .first-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.on-pos .img-box .first-img a .glImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.on-pos .img-box .first-img a .glImage::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-image: url(../images/about/link.svg);
+  background-position: calc( 100% - 15px) 15px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.on-pos .img-box .first-img a .glImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.on-pos .img-box .first-img a:hover .glImage::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.on-pos .content-box {
+  padding-right: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.on-pos .content-box h3 {
+  font-size: 40px;
+  font-family: 'Suisse-B';
+  color: #303030;
+  margin-bottom: 48px;
+}
+
+.on-pos .content-box p {
+  font-size: 18px;
+  color: #303030;
+  margin-bottom: 0;
+}
+
+.on-pos.rev-pos .content-box {
+  padding-right: 0;
+  padding-left: 75px;
+}
+
+.on-pos.two-sections h3 span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.on-pos.two-sections .first-sec .img-box {
+  padding-right: 40px;
+}
+
+.on-pos.two-sections .first-sec .content-box {
+  padding-left: 40px;
+  padding-right: 75px;
+  margin-top: 40px;
+}
+
+.on-pos.two-sections .second-sec {
+  margin-top: 150px;
+}
+
+.on-pos.two-sections .second-sec .img-box {
+  padding-left: 40px;
+}
+
+.on-pos.two-sections .second-sec .content-box {
+  padding-right: 40px;
+  padding-left: 75px;
+  margin-bottom: 40px;
+}
+
+.about-know {
+  background-color: #ffffff;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) bottom;
+}
+
+.about-know .content-box h3 {
+  margin-top: -150px;
+}
+
+.about-know .img-box-grp .first-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-know .img-box-grp .first-img a .glImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-know .img-box-grp .first-img a .glImage::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-image: url(../images/about/link.svg);
+  background-position: calc( 100% - 15px) 15px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.about-know .img-box-grp .first-img a .glImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-know .img-box-grp .first-img a:hover .glImage::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-know .img-box-grp .imgs-grp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.about-know .img-box-grp .imgs-grp div {
+  width: 100%;
+  height: 152px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-know .img-box-grp .imgs-grp div a .glImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.about-know .img-box-grp .imgs-grp div a .glImage::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-image: url(../images/about/link.svg);
+  background-position: calc( 100% - 15px) 15px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.about-know .img-box-grp .imgs-grp div a .glImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-know .img-box-grp .imgs-grp div a:hover .glImage::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.importance {
+  background-color: #ffffff;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(0% - 175px) 75%;
+}
+
+.heritage {
+  padding-top: 114px;
+  padding-bottom: 165px;
+  background-color: #F9F9F9;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) center;
+}
+
+.nature {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.nature:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: 0;
+  right: 0;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) bottom;
+  z-index: 7;
+}
+
+.geo {
+  background-color: #ffffff;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(0% - 175px) 130%;
+}
+
+.challenges {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  margin-bottom: 146px;
+  background-color: #F9F9F9;
+  background-image: url(../images/home/know-pattern.svg), url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) 27%, calc(0% - 175px) 90%;
+}
+
 @media (min-width: 1700px) {
   .large-container {
     max-width: 1635px;
