@@ -2301,6 +2301,106 @@ footer .last-links ul li:last-child::after {
   background-position: calc(100% + 175px) 27%, calc(0% - 175px) 90%;
 }
 
+.ourNumbers-details {
+  background-color: #F5F5F5;
+  position: relative;
+}
+
+.ourNumbers-details:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) 90%;
+  z-index: 7;
+}
+
+.ourNumbers-details::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  top: -42px;
+  left: 0;
+  background-color: #F5F5F5;
+}
+
+.ourNumbers-cards {
+  background-color: #F5F5F5;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.ourNumbers-cards:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.ourNumbers-cards .container {
+  position: relative;
+}
+
+.ourNumbers-cards .number-card {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 45px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 45px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 34px;
+  height: 265px;
+  padding: 40px 30px 32px;
+}
+
+.ourNumbers-cards .number-card .cont-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.ourNumbers-cards .number-card .cont-box .numb {
+  font-size: 75px;
+  line-height: 1;
+  font-family: 'Suisse-B';
+  color: #887852;
+}
+
+.ourNumbers-cards .number-card .cont-box .title {
+  font-size: 16px;
+  line-height: 1;
+  color: #000;
+}
+
 @media (min-width: 1700px) {
   .large-container {
     max-width: 1635px;

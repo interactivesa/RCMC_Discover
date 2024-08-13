@@ -1824,3 +1824,85 @@ footer{
   background-repeat: no-repeat;
   background-position: calc(100% + 175px) 27%  , calc(0% - 175px) 90% ;
 }
+
+
+.ourNumbers-details{
+  background-color: #F5F5F5;
+  position: relative;
+  // background-image: url(../images/home/know-pattern.svg);
+  // background-repeat: no-repeat;
+  // background-position: calc(100% + 175px) 130% ;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    top: 0;
+    #{$start-direction}: 0;
+    background-image: url(../images/home/know-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 175px) 90% ;
+    z-index: 7;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    top: -42px;
+    #{$start-direction}: 0;
+    background-color: #F5F5F5;
+  }
+}
+
+.ourNumbers-cards{
+  background-color: #F5F5F5;
+  margin-bottom: 150px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    #{$start-direction}: 0;
+    background-color: $white;
+
+  }
+  .container{
+    position: relative;
+  }
+  .number-card{
+    background-color: $white;
+    box-shadow: 0 3px 45px rgba($color: #000000, $alpha: 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+    height: 265px;
+    padding: 40px 30px 32px;
+    .icon-box{
+
+      img{}
+    }
+    .cont-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      .numb{
+        font-size: 75px;
+        line-height: 1;
+        font-family: 'Suisse-B';
+        color: $green-color;
+      }
+      .title{
+        font-size: 16px;
+        line-height: 1;
+        color: #000;
+      }
+    }
+  }
+}
