@@ -151,7 +151,7 @@ $(document).ready(function () {
         slidesPerView: 2.3,
         centeredSlides: true,
         spaceBetween: 30,
-        initialSlide: 0,
+        initialSlide: 1,
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -170,7 +170,7 @@ $(document).ready(function () {
             slidesPerView: 2.3,
             spaceBetween: 30,
             centeredSlides: true,
-            initialSlide: 0,
+            initialSlide: 1,
           },
           // when window width is >= 640px
          
@@ -183,7 +183,7 @@ $(document).ready(function () {
         slidesPerView: 2.3,
         centeredSlides: true,
         spaceBetween: 30,
-        initialSlide: 0,
+        initialSlide: 1,
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -202,7 +202,7 @@ $(document).ready(function () {
             slidesPerView: 2.3,
             spaceBetween: 30,
             centeredSlides: true,
-            initialSlide: 0,
+            initialSlide: 1,
           },
           // when window width is >= 640px
          
