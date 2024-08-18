@@ -1301,7 +1301,7 @@ footer{
           color: #fff;
           display: block;
           text-align: center;
-          vertical-align: middle;
+          // vertical-align: middle;
           text-align: center;
           line-height: 30px;
         }
@@ -1360,7 +1360,7 @@ footer{
     .search_icon {
       display: block;
       color: #fff;
-      vertical-align: top;
+      // vertical-align: top;
       margin: 0;
       font-weight: 600;
       text-transform: uppercase;
@@ -2123,5 +2123,404 @@ footer{
       border-radius: 12px;
       box-shadow: 0 3px 15px rgba($color: #000000, $alpha: 0.08);
     }
+  }
+}
+
+
+
+
+.List-banner{
+  margin-bottom: 130px;
+  .first-sec{
+    position: relative;
+    width: 100%;
+    height: 430px;
+    padding: 50px 83px;
+    border-radius: 12px;
+    overflow: hidden;
+   .img-box{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     #{$start-direction}:0;
+     top: 0;
+     img{
+      max-width: 100%;
+     }
+   }
+   .content-box{
+     position: relative;
+     max-width: 965px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+     h3{
+       font-size: 72px;
+       font-family: 'Suisse-B';
+       color: $white;
+       margin-bottom: 10px;
+       span{
+         display: block;
+         font-size: 20px;
+         margin-bottom: 20px;
+       }
+     }
+     p{
+       font-size: 18px;
+       color: $white;
+       margin-bottom: 0;
+     }
+   }
+  }
+}
+
+.bgGrey-withImg{
+  background-color: $greyBg;
+  background-image: url(../images/home/know-pattern.svg) , url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 175px) 32%  , calc(0% - 175px) 77% ;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    #{$start-direction}:0;
+    width: 100%;
+    height: 7%;
+    background-color: $white;
+  }
+}
+.events-sec{
+  padding-bottom: 80px;
+  position: relative;
+  .img-box{
+    padding-#{$start-direction}:0 ;
+    padding-#{$end-direction}:30px ;
+  }
+}
+
+.activities-sec{
+  position: relative;
+  padding-bottom: 85px;
+  .img-box{
+    padding-#{$start-direction}:30px ;
+    padding-#{$end-direction}:0 ;
+  }
+}
+
+
+
+.events-list{
+  margin-bottom: 154px;
+  margin-top: 65px;
+  .main-data{
+    .main-title{
+      font-size: 40px;
+      font-family: 'Suisse-B';
+      color: $titleColor;
+      margin-bottom: 25px;
+    }
+    p{
+      font-size: 18px;
+      color: $grey4;
+      margin-bottom: 24px;
+    }
+  }
+
+
+  .home-tabs{
+    margin-bottom: 40px;
+    .nav{
+      padding: 0;
+      gap: 10px;
+      .nav-item{
+        .nav-link{
+          font-size: 16px;
+          color: $green-color;
+          background-color: transparent;
+          border-radius: 25px;
+          padding: 13px 25px 10px;
+          &.active{
+            font-size: 18px;
+            color: $white;
+            background-color: $green-color;
+            box-shadow: 0 3px 25px rgba($color: #000000, $alpha: 0.15);
+          }
+        }
+      }
+    }
+  }
+  .ev-card{
+    height: 645px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.08);
+    background-color: $white;
+    margin-bottom: 40px;
+    position: relative;
+    .img-box{
+      width: 100%;
+      height: 475px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      img{
+        max-width: 100%;
+        transition: .3s;
+      }
+    }
+    .details-box{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      padding: 0 25px;
+      .date{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 18px;
+        color: $titleColor;
+        line-height: 18px;
+        span{
+          font-size: inherit;
+          color: inherit;
+        }
+      }
+      .category{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        line-height: 17px;
+        .icon-box{
+          max-width: 20px;
+          img{
+            max-width: 100%;
+          }
+        }
+        span{
+          font-size: 14px;
+          color: $titleColor;
+        }
+      }
+      .title{
+        font-size: 22px;
+        line-height: 24px;
+        font-family: 'Suisse-B';
+        color: $titleColor;
+      }
+    }
+
+
+    &:hover{
+      .img-box{
+        img{
+          transform: scale(1.2);
+        }
+      }
+      .details-box{
+        .title{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+.details-banner{
+  background-color: $white;
+  position: relative;
+  margin-bottom: 58px;
+  margin-top: 20px;
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    #{$start-direction}:0;
+    width: 100%;
+    height: 60%;
+    background-color: $greyBg;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    #{$start-direction}:0;
+    width: 100%;
+    height: 65%;
+    background-image: url(../images/home/know-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 175px) 0% ;
+    z-index: 1;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+  .page-title{
+    font-size: 56px;
+    font-family: 'Suisse-B';
+    color: $titleColor;
+    margin-bottom: 50px;
+  }
+  .img-box{
+    width: 100%;
+    height: 720px;
+    border-radius: 12px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .det-area{
+    padding-bottom: 110px;
+    padding-top: 110px;
+    .content-box{
+      h3{
+        font-size: 40px;
+        font-family: 'Suisse-B';
+        color: $titleColor;
+        margin-bottom: 55px;
+      }
+      p{
+        font-size: 18px;
+        color: $titleColor;
+        margin-bottom: 0px;
+      }
+    }
+    .details-box{
+      padding-#{$start-direction}: 150px;
+      h4{
+        font-size: 22px;
+        font-family: 'Suisse-B';
+        color: $titleColor;
+        margin-bottom: 29px;
+      }
+      .date{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 18px;
+        color: $titleColor;
+        line-height: 18px;
+        margin-bottom: 25px;
+        span{
+          font-size: inherit;
+          color: inherit;
+        }
+      }
+      .category{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        line-height: 17px;
+        .icon-box{
+          max-width: 20px;
+          img{
+            max-width: 100%;
+          }
+        }
+        span{
+          font-size: 14px;
+          color: $titleColor;
+        }
+      }
+  
+      .location{
+        max-width: 445px;
+        margin-top: 36px;
+        a{
+          width: 100%;
+          height: 54px;
+          background-color: $green-color;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          border-radius: 27px;
+          transition: .3s;
+          img{
+            width: 18px;
+          }
+          span{
+            font-size: 18px;
+            color: $white;
+            margin-bottom: 0px;
+          }
+  
+          &:hover{
+            background-color: #756B65;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.details-album{
+  background-color: $white;
+  position: relative;
+  background-image: url(../images/home/know-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: calc(0% - 175px) 14% ;
+  h3{
+    font-size: 40px;
+    font-family: 'Suisse-B';
+    color: $titleColor;
+    margin-bottom: 70px;
+  }
+  .on-pos {
+    padding-bottom: 75px;
+  }
+  .video-box{
+    .first-img {
+      a {
+        .glImage{
+          &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            #{$start-direction}: 0;
+            background-color: rgba(0, 0, 0, 0.15);
+            background-image: url(../images/shared/play.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+  .col-lg-6{
+    &:first-child{
+      padding-#{$start-direction}: 45px;
+    }
+    &:nth-child(2){
+      padding-#{$end-direction}: 45px;
+    }
+    &:nth-child(3){
+      padding-#{$start-direction}: 45px;
+    }
+  }
+}
+
+.det-listCards{
+  .main-title{
+    font-size: 40px;
+    font-family: 'Suisse-B';
+    color: $titleColor;
+    margin-bottom: 30px;
   }
 }
