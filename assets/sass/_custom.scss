@@ -2268,7 +2268,9 @@ footer{
       overflow: hidden;
       margin-bottom: 25px;
       img{
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         transition: .3s;
       }
     }
@@ -2367,6 +2369,13 @@ footer{
     color: $titleColor;
     margin-bottom: 50px;
   }
+  .pageSecond-title{
+    font-size: 20px;
+    font-family: 'Suisse-B';
+    color: $titleColor;
+    margin-bottom: 35px;
+    margin-top: -15px;
+  }
   .img-box{
     width: 100%;
     height: 720px;
@@ -2386,12 +2395,30 @@ footer{
         font-size: 40px;
         font-family: 'Suisse-B';
         color: $titleColor;
-        margin-bottom: 55px;
+        margin-bottom: 40px;
       }
       p{
         font-size: 18px;
         color: $titleColor;
         margin-bottom: 0px;
+      }
+    }
+    .category{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+      line-height: 17px;
+      margin-bottom: 18px;
+      .icon-box{
+        max-width: 20px;
+        img{
+          max-width: 100%;
+        }
+      }
+      span{
+        font-size: 14px;
+        color: $green-color2;
       }
     }
     .details-box{
@@ -2433,6 +2460,35 @@ footer{
         }
       }
   
+      .with-list{
+        h4{
+          img{
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+          }
+          font-size: 25px;
+          font-family: 'Suisse-B';
+          color: #000;
+          margin-bottom: 20px;
+        }
+        .act-list{
+
+          ul{
+            margin-bottom: 0;
+            li{
+              font-size: 18px;
+              color: $titleColor;
+              margin-bottom: 13px;
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+      }
+
       .location{
         max-width: 445px;
         margin-top: 36px;
@@ -2656,5 +2712,57 @@ footer{
     height: 200%;
     position: absolute;
     top: -42px;
+  }
+}
+ul.list-with-numbers{
+  counter-reset: li;
+  list-style: none;
+  padding: 0;
+  padding-#{$start-direction}: 30px;
+  margin: 0;
+  li{
+    font-size: 18px;
+    color: $titleColor;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+    &::before{
+      width: 48px;
+      height: 48px;
+      background-color: #E8DDCD;
+      color: $green-color;
+      font-size: 18px;
+      font-family: 'Suisse-M';
+      counter-increment: li;
+      content: counter(li);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+    }
+  }
+}
+
+.toursListItems-with-img{
+  padding-bottom: 70px;
+  h4{
+    font-size: 30px;
+    font-family: 'Suisse-B';
+    color: $titleColor;
+    margin-bottom: 40px;
+  }
+  .img-box{
+    margin-#{$end-direction}: 30px;
+  }
+  .cont-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 }
