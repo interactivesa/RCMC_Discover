@@ -2535,3 +2535,126 @@ footer{
     margin-bottom: 30px;
   }
 }
+
+.events-list{
+
+  &.tours-list{
+    margin-bottom: 80px;
+    position: relative;
+    .ev-card{
+      height: calc(100% - 40px);
+     
+      .img-box{
+        margin-bottom: 18px;
+        border-radius: 20px 20px 0 0;
+      }
+      .details-box{
+        gap: 15px;
+        padding-bottom: 35px;
+        .title{
+          font-size: 20px;
+        }
+        .time{
+          font-size: 18px;
+          color: #444444;
+        }
+        .details{
+          font-size: 16px;
+          color: $grey4;
+          margin-bottom: 0;
+        }
+      }
+      
+    }
+  }
+
+}
+
+.design-yours{
+  margin-bottom: 155px;
+  .designYours-card{
+     border: 1px solid #E9E2D9;
+     box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.1);
+      .content-box{
+        margin-#{$start-direction}: 75px;
+        max-width: 87%;
+        min-height: 535px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      h4{
+        font-size: 40px;
+        font-family: 'Suisse-B';
+        color: #000;
+        margin-bottom: 23px;
+      }
+      p{
+        font-size: 18px;
+        color: #000;
+      }
+    }
+    .sign{
+      background-color: #F5F1EC;
+      max-width: 740px;
+      min-height: 535px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0px 13%;
+      margin-#{$start-direction}: auto;
+      margin-#{$end-direction}: 0;
+      h4{
+        font-size: 25px;
+        font-family: 'Suisse-B';
+        color: #000;
+        margin-bottom: 24px;
+      }
+      .mail-form{
+        position: relative;
+        input{
+          width: 87%;
+          height: 65px;
+          font-size: 18px;
+          padding: 24px;
+          padding-#{$end-direction}: 25%;
+          border-radius: 33px;
+          border: 1px solid #CECECE;
+        }
+        .signHere{
+          width: 142px;
+          height: 65px;
+          background-color: $green-color;
+          color: $white;
+          border-radius: 33px;
+          border: 0;
+          position: absolute;
+          #{$end-direction}:0;
+          top: 0;
+          font-size: 18px;
+          font-family: 'Suisse-B';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+.bgGrey-withImg2 {
+  position: relative;
+  
+  &:before {
+    content:"";
+    background: #F5F5F5;
+    background-image: url(../images/home/know-pattern.svg);
+    background-repeat: no-repeat;
+    background-position:calc(100% + 215px) 31%;
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: -42px;
+  }
+}

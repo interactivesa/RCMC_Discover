@@ -3090,6 +3090,157 @@ footer .last-links ul li:last-child::after {
   margin-bottom: 30px;
 }
 
+.events-list.tours-list {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.events-list.tours-list .ev-card {
+  height: calc(100% - 40px);
+}
+
+.events-list.tours-list .ev-card .img-box {
+  margin-bottom: 18px;
+  border-radius: 20px 20px 0 0;
+}
+
+.events-list.tours-list .ev-card .details-box {
+  gap: 15px;
+  padding-bottom: 35px;
+}
+
+.events-list.tours-list .ev-card .details-box .title {
+  font-size: 20px;
+}
+
+.events-list.tours-list .ev-card .details-box .time {
+  font-size: 18px;
+  color: #444444;
+}
+
+.events-list.tours-list .ev-card .details-box .details {
+  font-size: 16px;
+  color: #636569;
+  margin-bottom: 0;
+}
+
+.design-yours {
+  margin-bottom: 155px;
+}
+
+.design-yours .designYours-card {
+  border: 1px solid #E9E2D9;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.design-yours .designYours-card .content-box {
+  margin-right: 75px;
+  max-width: 87%;
+  min-height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.design-yours .designYours-card .content-box h4 {
+  font-size: 40px;
+  font-family: 'Suisse-B';
+  color: #000;
+  margin-bottom: 23px;
+}
+
+.design-yours .designYours-card .content-box p {
+  font-size: 18px;
+  color: #000;
+}
+
+.design-yours .designYours-card .sign {
+  background-color: #F5F1EC;
+  max-width: 740px;
+  min-height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 13%;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.design-yours .designYours-card .sign h4 {
+  font-size: 25px;
+  font-family: 'Suisse-B';
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.design-yours .designYours-card .sign .mail-form {
+  position: relative;
+}
+
+.design-yours .designYours-card .sign .mail-form input {
+  width: 87%;
+  height: 65px;
+  font-size: 18px;
+  padding: 24px;
+  padding-left: 25%;
+  border-radius: 33px;
+  border: 1px solid #CECECE;
+}
+
+.design-yours .designYours-card .sign .mail-form .signHere {
+  width: 142px;
+  height: 65px;
+  background-color: #887852;
+  color: #ffffff;
+  border-radius: 33px;
+  border: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  font-family: 'Suisse-B';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bgGrey-withImg2 {
+  position: relative;
+}
+
+.bgGrey-withImg2:before {
+  content: "";
+  background: #F5F5F5;
+  background-image: url(../images/home/know-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 215px) 31%;
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: -42px;
+}
+
 @media (min-width: 1700px) {
   .large-container {
     max-width: 1635px;
