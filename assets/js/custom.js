@@ -34,7 +34,13 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+          1200: {
             slidesPerView: 2.5,
             spaceBetween: 30,
             centeredSlides: true,
@@ -60,11 +66,17 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+          1200: {
             slidesPerView: 2.5,
             spaceBetween: 30,
             centeredSlides: true,
-            initialSlide: 2,
+            initialSlide: 1,
           },
           // when window width is >= 640px
          
@@ -96,7 +108,14 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            initialSlide:0,
+          },
+            // when window width is >= 480px
+          1200: {
             slidesPerView: 3.8,
             spaceBetween: 30,
             centeredSlides: true,
@@ -131,7 +150,14 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+            initialSlide:0,
+          },
+            // when window width is >= 480px
+          1200: {
             slidesPerView: 3.8,
             spaceBetween: 30,
             centeredSlides: true,
@@ -166,12 +192,22 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            initialSlide: 0,
+            centeredSlides: false,
+          },
+
+           // when window width is >= 480px
+           1200: {
             slidesPerView: 2.3,
             spaceBetween: 30,
             centeredSlides: true,
             initialSlide: 1,
           },
+
+          
           // when window width is >= 640px
          
         },
@@ -198,7 +234,15 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          700: {
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            initialSlide: 0,
+            centeredSlides: false,
+          },
+
+           // when window width is >= 480px
+           1200: {
             slidesPerView: 2.3,
             spaceBetween: 30,
             centeredSlides: true,
@@ -209,6 +253,50 @@ $(document).ready(function () {
         },
 
       });
+
+
+
+
+      let swiper8 = new Swiper(".landMarkSwiper", {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 28,
+        initialSlide: 0,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            initialSlide: 0,
+            centeredSlides: false,
+          },
+
+           // when window width is >= 480px
+           1200: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+            centeredSlides: false,
+            initialSlide: 0,
+          },
+          // when window width is >= 640px
+         
+        },
+
+      });
+
+      
 
      
 });

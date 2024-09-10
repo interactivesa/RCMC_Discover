@@ -14,35 +14,138 @@
 
 @media (max-width:1650px){
 
+  .know-Mecca {
+    background-position: 120% 98%;
+    .content-box {
+      h4{
+        margin-bottom: 50px;
+      }
+    }
+    .numbers-sec{
+      width: 750px;
+      height: 140px;
+      gap: 45px;
+      h4{
+        font-size: 25px;
+        padding-left: 40px;
+      }
+      .number-container{
+        gap: 75px;
+        .numb-card {
+          .numb{
+            font-size: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .events-activities .tab-content .content-card {
+    .img-box{
+      width: 45%;
+      height: 335px;
+      flex: 0 0 auto;
+    }
+  }
+
+  .Tourist-Experiences .tab-content .content-card {
+    .img-box{
+      height: 350px;
+    }
+  }
+
+  .Mecca-landmarks .tab-content .content-card {
+    .img-box{
+      height: 370px;
+    }
+  }
 }
 @media (max-width: 1400px) {
- 
-  .homeHeader .homeSwiper .boxHomeSlide {
-    margin-bottom: 50px;
+  .homeHeader .homeSwiper .boxHomeSlide h2 {
+    font-size: 50px;
   }
-  .homeHeader .homeSwiper .boxHomeSlide {
-    width: 100%;
+  footer .footer-links ul{
+    gap: 80px;
   }
+  
  
 
  
 }
 @media (max-width: 1199.98px) {
+  .know-Mecca {
+    background-position: 130% 98%;
+}
+  .know-Mecca .img-box{
+    height: 600px;
+  }
+  .know-Mecca .content-box{
+    padding-left: 40px;
+  }
+  .know-Mecca .content-box h4 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .know-Mecca .content-box p {
+    font-size: 16px;
+  }
+  .know-Mecca .content-box p + p {
+    margin-top: 20px;
+  }
+  .know-Mecca .numbers-sec{
+    margin-top: 40px;
+    width: 660px;
+    gap: 35px;
+    padding: 30px;
+  }
 
-  .homeHeader .homeSwiper {
-    margin-top: 150px;
-  }
-  .homeHeader .homeSwiper .swiper-slide .boxHomeSlide{
-    margin-#{$end-direction}: 0;
-  }
-  .homeHeader .homeSwiper {
-    margin-top: 125px;
-  }
-  .homeHeader .homeSwiper .boxHomeSlide{
-    margin-#{$start-direction}: 50px;
+  .weather {
+    padding: 70px 0;
+    .img-box{
+      max-height: 580px;
+    }
+    .content-box{
+      padding-right: 50px;
+      h4{
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 16px;
+      }
+      .more{
+        margin-top: 30px;
+        a{
+          span{
+            font-size: 16px;
+          }
+        }
+      }
+    }
   }
 
 
+  .events-activities ,
+  .Tourist-Experiences ,
+  .Mecca-landmarks{
+    padding: 70px 0;
+    .main-title{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 16px;
+    }
+    .more{
+      a{
+        span{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
 }
 
 
@@ -60,45 +163,354 @@
     max-height: 650px;
   }
 
-
-
-/*
-        neeeeeeeeeeeew
-*/
-
-
   .homeHeader video{
     min-height: 100%;
   }
  
+  .homeHeader .homeSwiper .boxHomeSlide{
+    h2{
+      font-size: 35px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    h4{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    p{
+       font-size: 16px;
+       margin-bottom: 15px;
+     }
+     .read-more {
+      span{
+        font-size: 16px;
+      }
+      .arrow-box{
+        width: 40px;
+        height: 40px;
+      }
+     }
+  }
 
+  .know-Mecca{
+    padding: 60px 0;
+    .content-box{
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+
+      p + p{
+        margin-top: 10px;
+      }
+    }
+    .numbers-sec{
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  .weather {
+    .content-box{
+      padding: 0;
+      margin-top: 20px;
+    }
+  }
+  footer .footer-links ul {
+    gap: 30px;
+    justify-content: space-around;
+  }
 }
 
 
 @media (max-width: 767.98px) {
-  .homeHeader .homeSwiper .swiper-slide .boxHomeSlide {
-    margin-top: 75px;
-    margin-bottom: 15px;
-}
-.homeHeader .homeSwiper .boxHomeSlide h2 {
-  font-size: 25px;
-}
-.homeHeader .homeSwiper .boxHomeSlide p {
-  font-size: 18px;
-}
-
-
-
-}
-
-
-@media (max-width: 500px) {
-  .homeHeader .homeSwiper .swiper-slide .boxHomeSlide{
-    margin-#{$start-direction}: 0px;
+  .homeHeader .homeSwiper .boxHomeSlide{
+    h2 {
+      font-size: 30px;
+    }
+    h4{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .read-more {
+      span{
+        font-size: 14px;
+      }
+    }
   }
-  .homeHeader .homeSwiper .swiper-slide * {
-    // margin-#{$start-direction}: 20px;
-    padding: 0 15px;
+  .know-Mecca{
+    .img-box{
+      height: auto;
+    }
+    .content-box {
+      h4{
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    .numbers-sec{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      gap: 15px;
+      h4{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 15px;
+        span{
+          display: inline-block;
+        }
+        &::after{
+          width: 50%;
+          height: 1px;
+          top: auto;
+          bottom: 0;
+          transform: translateX(50%);
+        }
+      }
+      .number-container{
+        gap: 40px;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        .numb-card{
+          .numb{
+            font-size: 35px;
+            line-height: 35px;
+          }
+          .title{
+            margin-top: 10px;
+          }
+        }
+      }
+    }
   }
- 
+
+  .weather {
+    .img-box{
+      height: 400px;
+    }
+    .content-box {
+      h4{
+        margin-bottom: 20px;
+        font-size: 25px;
+      }
+      p{
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .more {
+        margin-top: 0;
+        a {
+          span{
+            font-size: 14px;
+          }
+          img{
+            width: 13px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .events-activities ,
+  .Tourist-Experiences ,
+  .Mecca-landmarks{
+    .main-title{
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .more {
+      a {
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+    .home-tabs {
+        margin-bottom: 30px;
+        .nav .nav-item .nav-link{
+        font-size: 14px !important;
+      }
+    }
+
+  }
+
+  .Tourist-Experiences .more{
+    margin-top: 0;
+  }
+
+
+  footer {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    .footer-social{
+      margin-top: 30px;
+      margin-bottom: 20px;  
+    }
+    .footer-logos{
+      margin-bottom: 20px;
+    }
+    .footer-links ul{
+      gap: 15px;
+      justify-content: space-between;
+      li{
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+    .copyRights{
+      font-size: 14px;
+    }
+    .update{
+      margin: 0;
+    }
+  }
+
+}
+
+
+@media (max-width: 574.98px) {
+ .navigation-conatiner .top_nav .row .col-6{
+  width: 100%;
+ }
+ .navbar{
+  padding: 15px 0 !important;
+ }
+ .reverse-nav{
+  flex-direction: column;
+  padding: 0;
+  padding-top: 15px;
+  gap: 0;
+  .dropdown-menu{
+    width: 100%;
+    .dropdown-item{
+      padding: 5px 20px !important;
+    }
+  }
+ }
+
+ footer {
+  .footer-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+  }
+  .footer-social{
+    flex-direction: column;
+    .phone{
+      margin: 0 ;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-logos{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+
+
+
+}
+.events-activities {
+  .tab-content{
+    .content-card {
+      flex-direction: column ;
+      .img-box{
+        height: 260px;
+        width: 100% ;
+      }
+      .content-box {
+        padding: 20px;
+        gap: 10px;
+        h4{
+          font-size: 18px;
+          margin: 0;
+        }
+        p.details {
+          font-size: 14px ;
+        }
+        .date {
+          .date-cont {
+            div {
+              p{
+                display: inline-block;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .swiper-button-prev,.swiper-rtl .swiper-button-next{
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    &::after{
+      background-size: contain;
+    }
+  }
+}
+
+
+
+.Tourist-Experiences {
+  .tab-content{
+    .content-card {
+      flex-direction: column ;
+      .img-box{
+        height: 260px;
+        width: 100% ;
+      }
+      .content-box {
+        padding: 20px;
+        gap: 10px;
+        h4{
+          margin: 0;
+          font-size: 18px;
+        }
+        p.details {
+          font-size: 14px ;
+        }
+        p.date {
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .swiper-button-prev,.swiper-rtl .swiper-button-next{
+    top: 44%;
+    width: 40px;
+    height: 40px;
+    &::after{
+      background-size: contain;
+    }
+  }
+}
+
+.Mecca-landmarks .tab-content .content-card {
+  .img-box {
+    height: 270px;
+  }
+  .content-box{
+    margin-top: 5px;
+  }
+}
+
+
 }

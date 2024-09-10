@@ -288,6 +288,7 @@ body .swiper-pagination-bullet {
   z-index: 99;
   transition: .5s;
   cursor: pointer;
+  box-shadow: 0 0px 40px #00000040;
 
   .closed-btn{
     img{}
@@ -309,6 +310,7 @@ body .swiper-pagination-bullet {
         font-family: 'Suisse-B';
         display: block;
         margin-bottom: 0;
+        direction: ltr;
       }
     }
     .social-list{
@@ -445,6 +447,8 @@ footer{
           font-size: 18px;
           font-family: 'Suisse-B';
           color: $white;
+          direction: ltr;
+          display: block;
         }
       }
     }
@@ -640,7 +644,11 @@ footer{
     border-radius: 12px;
     overflow: hidden;
     max-height: 665px;
-    img{}
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -2531,6 +2539,65 @@ footer{
     }
 
   }
+
+
+
+  &.Landmarks-det{
+    .img-box{
+      position: relative;
+    
+      .landMark-det{
+        position: absolute;
+        right: 50%;
+        bottom: 40px;
+        width: 100%;
+        height: max-content;
+        background-color: transparent;
+        z-index: 9999999;
+        max-width: 690px;
+        transform: translateX(50%);
+        .swiper-slide{
+          background-color: transparent;
+          .content-card{
+            border: 3px solid $white;
+            border-radius: 16px;
+            overflow: hidden;
+          }
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next{
+          width: 60px;
+          height: 60px;
+          background-color: $white;
+          box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.15);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          display: none;
+          &::after{
+            content: url(../images/home/swiper-R.svg);
+            font-size: inherit;
+            width: 9px;
+            height: 15px;
+          }
+        
+        }
+        .swiper-button-prev{
+          #{$start-direction}: 5%;
+          #{$end-direction}: auto;
+          &::after{
+            transform: scaleX(-1);
+          }
+        }
+        .swiper-button-next{
+          #{$start-direction}: auto;
+          #{$end-direction}: 5%;
+        }
+      }
+    
+    }
+  }
 }
 
 .details-album{
@@ -2764,5 +2831,13 @@ ul.list-with-numbers{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+  }
+}
+
+.img-box{
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
