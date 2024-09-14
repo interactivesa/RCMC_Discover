@@ -276,15 +276,15 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          800: {
+          575: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 20,
             initialSlide: 0,
             centeredSlides: false,
           },
 
            // when window width is >= 480px
-           1200: {
+           992: {
             slidesPerView: 3,
             spaceBetween: 28,
             centeredSlides: false,

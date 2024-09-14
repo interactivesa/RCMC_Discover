@@ -1270,31 +1270,31 @@ footer{
   display: inline-block;
   background: #887852;
   padding: 0 20px;
-  margin-right: -15px;
+  margin-#{$start-direction}: -15px;
   position: relative;
   &::before {
     content: "";
     border-top: 37px solid #887852;
-    border-left: 19px solid transparent;
+    border-#{$end-direction}: 19px solid transparent;
     position: absolute;
-    left: -19px;
+    #{$end-direction}: -19px;
   }
 
   .social-icons {
     margin: 0 0;
-    text-align: right;
+    text-align: #{$start-direction};
     font-weight: 300;
     display: block;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-#{$end-direction}: 0;
+    padding-#{$start-direction}: 0;
     li {
       display: inline-block;
       margin: 0;
       a {
         display: block;
-        text-align: left;
+        text-align: #{$end-direction};
         color: #4f8f1a;
         font-size: 15px;
         width: 30px;
@@ -1360,6 +1360,8 @@ footer{
       font-size: 18px;
       font-family: 'Suisse-B';
       color: $white;
+      direction: ltr;
+      display: block;
     }
   }
   .nav_search_icon {
@@ -1413,9 +1415,9 @@ footer{
 }
 
 .nav_dropdown {
-  right: 0;
+  #{$start-direction}: 0;
   background: #756b65;
-  margin-left: 0px;
+  margin-#{$end-direction}: 0px;
   width: 216px;
   position: absolute;
   margin-top: -8px;
@@ -1444,21 +1446,21 @@ footer{
 .srch_box {
   position: absolute;
   z-index: 999;
-  left: 0;
+  #{$end-direction}: 0;
   width: 35%;
   margin-top: 37px;
   background: #887852;
-  text-align: left;
+  text-align: #{$end-direction};
   border: 1px solid #666;
   padding: 7px; /*display: none;*/
   .srch_sec1 {
-    float: right;
+    float: #{$start-direction};
     width: 83%;
-    border-left: 1px #999 solid;
+    border-#{$end-direction}: 1px #999 solid;
   
   }
   .srch_sec3 {
-    float: right;
+    float: #{$start-direction};
     width: 17%;
   }
   input[type=text] {
@@ -1478,7 +1480,7 @@ footer{
     padding: 9px 0px;
     width: 100%;
     cursor: pointer;
-    float: left;
+    float: #{$end-direction};
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -1747,7 +1749,7 @@ footer{
       margin-top: 10px;
       div{
         width: 100%;
-        height: 152px;
+        height: 150px;
         position: relative;
         border-radius: 12px;
         overflow: hidden;
@@ -1776,6 +1778,7 @@ footer{
             img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
             }
           }
   
@@ -1827,7 +1830,7 @@ footer{
     width: 100%;
     height: 110%;
     top: 0;
-    right: 0;
+    #{$start-direction}: 0;
     background-image: url(../images/home/know-pattern.svg);
     background-repeat: no-repeat;
     background-position: calc(100% + 175px) bottom;
@@ -1864,12 +1867,12 @@ footer{
     content: "";
     position: absolute;
     width: 100%;
-    height: 120%;
+    height: 100%;
     top: 0;
     #{$start-direction}: 0;
     background-image: url(../images/home/know-pattern.svg);
     background-repeat: no-repeat;
-    background-position: calc(100% + 175px) 90% ;
+    background-position: calc(100% + 175px) 100% ;
     z-index: 0;
   }
   &::after{
@@ -1984,8 +1987,9 @@ footer{
             transition: .3s;
           }
           img{
-          width: 100%;
-          height: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
 
@@ -2034,8 +2038,9 @@ footer{
               transition: .3s;
             }
             img{
-            width: 100%;
-            height: 100%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
   
@@ -2548,23 +2553,29 @@ footer{
     
       .landMark-det{
         position: absolute;
-        right: 50%;
+        #{$start-direction}: 50%;
         bottom: 40px;
         width: 100%;
         height: max-content;
         background-color: transparent;
         z-index: 9999999;
-        max-width: 690px;
+        max-width: 900px;
         transform: translateX(50%);
+        padding: 0 100px;
+        // .swiper{
+        //   padding: 0 100px;
+        // }
         .swiper-slide{
           background-color: transparent;
           .content-card{
             border: 3px solid $white;
             border-radius: 16px;
             overflow: hidden;
+            height: 145px;
+            width: 100%;
           }
         }
-        .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        .swiper-button-prev,  .swiper-button-next{
           width: 60px;
           height: 60px;
           background-color: $white;
@@ -2574,7 +2585,7 @@ footer{
           align-items: center;
           justify-content: center;
           padding: 10px;
-          display: none;
+          // display: none;
           &::after{
             content: url(../images/home/swiper-R.svg);
             font-size: inherit;
@@ -2584,7 +2595,7 @@ footer{
         
         }
         .swiper-button-prev{
-          #{$start-direction}: 5%;
+          #{$start-direction}: 0;
           #{$end-direction}: auto;
           &::after{
             transform: scaleX(-1);
@@ -2592,7 +2603,7 @@ footer{
         }
         .swiper-button-next{
           #{$start-direction}: auto;
-          #{$end-direction}: 5%;
+          #{$end-direction}: 0;
         }
       }
     
