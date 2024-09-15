@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*** LTR websites ***/
 @font-face {
   font-family: "Suisse-L";
@@ -431,8 +432,8 @@ body .swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .contact-toggle {
-  width: 185px;
-  height: 74px;
+  width: 210px;
+  height: 90px;
   background-color: #076B40;
   border-radius: 0 37px 37px 0;
   display: -webkit-box;
@@ -446,7 +447,7 @@ body .swiper-pagination-bullet.swiper-pagination-bullet-active {
           justify-content: flex-start;
   position: fixed;
   top: 215px;
-  right: -125px;
+  right: -145px;
   padding: 10px 20px;
   z-index: 99;
   -webkit-transition: .5s;
@@ -479,6 +480,7 @@ body .swiper-pagination-bullet.swiper-pagination-bullet-active {
   display: block;
   margin-bottom: 0;
   direction: ltr;
+  letter-spacing: 1.2px;
 }
 
 .contact-toggle .opened-contact .social-list ul {
@@ -500,6 +502,15 @@ body .swiper-pagination-bullet.swiper-pagination-bullet-active {
   padding: 0;
   margin: 0;
   max-height: 15px;
+}
+
+.contact-toggle .opened-contact .social-list ul li a {
+  display: block;
+  height: 17px;
+}
+
+.contact-toggle .opened-contact .social-list ul li a img {
+  height: 100%;
 }
 
 .contact-toggle.show {
@@ -1024,7 +1035,7 @@ footer .last-links ul li:last-child::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 40%;
+  height: 35%;
   bottom: 0;
   left: 0;
   background-color: #F9F9F9;
@@ -1255,7 +1266,12 @@ footer .last-links ul li:last-child::after {
           transform: translateX(-7px);
 }
 
-.events-activities .swiper-button-prev, .events-activities .swiper-rtl .swiper-button-next {
+.events-activities .swiper {
+  margin-left: 6%;
+  margin-right: 0;
+}
+
+.events-activities .swiper-button {
   width: 60px;
   height: 60px;
   background-color: #ffffff;
@@ -1272,28 +1288,39 @@ footer .last-links ul li:last-child::after {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
+  position: absolute;
+  top: 64%;
+  z-index: 99999;
 }
 
-.events-activities .swiper-button-prev::after, .events-activities .swiper-rtl .swiper-button-next::after {
+.events-activities .swiper-button::after {
   content: url(../images/home/swiper-R.svg);
   font-size: inherit;
   width: 9px;
   height: 15px;
 }
 
-.events-activities .swiper-button-prev {
-  left: 5%;
+.events-activities .swiper-button.act-prev,
+.events-activities .swiper-button.ev-prev {
+  left: 2%;
   right: auto;
 }
 
-.events-activities .swiper-button-prev::after {
+.events-activities .swiper-button.act-prev::after,
+.events-activities .swiper-button.ev-prev::after {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-.events-activities .swiper-button-next {
+.events-activities .swiper-button.act-next,
+.events-activities .swiper-button.ev-next {
   left: auto;
-  right: 5%;
+  right: 2%;
+}
+
+.events-activities .swiper-button-disabled {
+  opacity: .5;
+  cursor: auto;
 }
 
 .Tourist-Experiences {
@@ -3493,6 +3520,38 @@ ul.list-with-numbers li::before {
      object-fit: cover;
 }
 
+.navigation-conatiner {
+  position: relative;
+}
+
+.navigation-conatiner::before {
+  content: " نسخة تجريبية";
+  background-color: #076B40;
+  color: #fff;
+  border-radius: 24px 0 0 24px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 3px 5px 5px 11px;
+  position: absolute;
+  top: 40px;
+  left: 215px;
+  height: 30px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 0 5px 40px #00000026;
+          box-shadow: 0 5px 40px #00000026;
+}
+
 @media (min-width: 1700px) {
   .large-container {
     max-width: 1635px;
@@ -4299,6 +4358,9 @@ ul.list-with-numbers li::before {
     position: relative;
     margin-top: 30px;
   }
+  .events-activities .swiper {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 574.98px) {
@@ -4459,6 +4521,17 @@ ul.list-with-numbers li::before {
   .design-yours .designYours-card .sign .mail-form .signHere {
     font-size: 14px;
     width: 90px;
+  }
+  .navigation-conatiner::before {
+    font-size: 10px;
+    letter-spacing: inherit;
+    top: 100px;
+    right: 220px;
+    width: 75px;
+    padding: 3px 5px 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=styleLTR.css.map */

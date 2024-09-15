@@ -274,8 +274,8 @@ body .swiper-pagination-bullet {
 
 
 .contact-toggle{
-  width: 185px;
-  height: 74px;
+  width: 210px;
+  height: 90px;
   background-color: $green-color2;
   border-radius: 0 37px 37px 0;
   display: flex;
@@ -283,7 +283,7 @@ body .swiper-pagination-bullet {
   justify-content: flex-start;
   position: fixed;
   top: 215px;
-  #{$end-direction}:-125px;
+  #{$end-direction}:-145px;
   padding: 10px 20px;
   z-index: 99;
   transition: .5s;
@@ -311,6 +311,7 @@ body .swiper-pagination-bullet {
         display: block;
         margin-bottom: 0;
         direction: ltr;
+        letter-spacing: 1.2px;
       }
     }
     .social-list{
@@ -326,7 +327,11 @@ body .swiper-pagination-bullet {
         max-height: 15px;
         li{
           a{
-
+            display: block;
+            height: 17px;
+            img{
+              height: 100%;
+            }
           }
         }
       }
@@ -723,7 +728,7 @@ footer{
     content: "";
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 35%;
     bottom: 0;
     #{$start-direction}:0;
     background-color: #F9F9F9;
@@ -896,7 +901,12 @@ footer{
     }
   }
 
-  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  .swiper {
+    // max-width: 1780px;
+    margin-#{$start-direction}: 6%;
+    margin-#{$end-direction}: 0;
+  }
+  .swiper-button {
     width: 60px;
     height: 60px;
     background-color: $white;
@@ -906,6 +916,9 @@ footer{
     align-items: center;
     justify-content: center;
     padding: 10px;
+    position: absolute;
+    top: 64%;
+    z-index: 99999;
     &::after{
       content: url(../images/home/swiper-R.svg);
       font-size: inherit;
@@ -914,16 +927,23 @@ footer{
     }
   
   }
-  .swiper-button-prev{
-    #{$start-direction}: 5%;
+  .swiper-button.act-prev,
+  .swiper-button.ev-prev{
+    #{$start-direction}: 2%;
     #{$end-direction}: auto;
     &::after{
       transform: scaleX(-1);
     }
   }
-  .swiper-button-next{
+  .swiper-button.act-next,
+  .swiper-button.ev-next{
     #{$start-direction}: auto;
-    #{$end-direction}: 5%;
+    #{$end-direction}: 2%;
+  }
+
+  .swiper-button-disabled {
+    opacity: .5;
+    cursor: auto;
   }
 }
 
@@ -2851,4 +2871,27 @@ ul.list-with-numbers{
     height: 100%;
     object-fit: cover;
   }
+}
+.navigation-conatiner{
+  position: relative;
+}
+
+.navigation-conatiner::before {
+  content: " نسخة تجريبية";
+  background-color: #076B40;
+  color: #fff;
+  border-radius: 24px 0 0 24px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 3px 5px 5px 11px;
+  position: absolute;
+  top: 40px;
+  #{$start-direction}: 215px;
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 5px 40px #00000026;
 }

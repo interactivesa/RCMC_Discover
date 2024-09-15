@@ -977,6 +977,9 @@
     position: relative;
     margin-top: 30px;
   }
+  .events-activities .swiper{
+    margin-#{$start-direction}: 0;
+  }
 }
 
 
@@ -1157,5 +1160,16 @@
   .design-yours .designYours-card .sign .mail-form .signHere{
     font-size: 14px;
     width: 90px;
+  }
+
+
+  .navigation-conatiner::before {
+    font-size: 10px;
+    letter-spacing: inherit;
+    top: 100px;
+    right: 220px;
+    width: 75px;
+    padding: 3px 5px 5px;
+    justify-content: center;
   }
 }

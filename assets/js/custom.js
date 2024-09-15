@@ -175,13 +175,13 @@ $(document).ready(function () {
 
       let swiper6 = new Swiper(".eventsSwiper", {
         slidesPerView: 2.3,
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 30,
-        initialSlide: 1,
+        initialSlide: 0,
 
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".ev-next",
+          prevEl: ".ev-prev",
         },
 
         // Responsive breakpoints
@@ -192,8 +192,8 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          800: {
-            slidesPerView: 2,
+          768: {
+            slidesPerView: 1.5,
             spaceBetween: 30,
             initialSlide: 0,
             centeredSlides: false,
@@ -203,10 +203,15 @@ $(document).ready(function () {
            1200: {
             slidesPerView: 2.3,
             spaceBetween: 30,
-            centeredSlides: true,
-            initialSlide: 1,
+            centeredSlides: false,
+            initialSlide: 0,
           },
-
+          // 1400: {
+          //   slidesPerView: 2.3,
+          //   spaceBetween: 30,
+          //   centeredSlides: false,
+          //   initialSlide: 0,
+          // },
           
           // when window width is >= 640px
          
@@ -217,13 +222,13 @@ $(document).ready(function () {
 
       let swiper7 = new Swiper(".activitiesSwiper", {
         slidesPerView: 2.3,
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 30,
-        initialSlide: 1,
+        initialSlide: 0,
 
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".act-next",
+          prevEl: ".act-prev",
         },
 
         // Responsive breakpoints
@@ -234,8 +239,8 @@ $(document).ready(function () {
             spaceBetween: 20,
           },
           // when window width is >= 480px
-          800: {
-            slidesPerView: 2,
+          768: {
+            slidesPerView: 1.5,
             spaceBetween: 30,
             initialSlide: 0,
             centeredSlides: false,
@@ -245,9 +250,16 @@ $(document).ready(function () {
            1200: {
             slidesPerView: 2.3,
             spaceBetween: 30,
-            centeredSlides: true,
-            initialSlide: 1,
+            centeredSlides: false,
+            initialSlide: 0,
           },
+          // 1400: {
+          //   slidesPerView: 2.3,
+          //   spaceBetween: 30,
+          //   centeredSlides: false,
+          //   initialSlide: 0,
+          // },
+          
           // when window width is >= 640px
          
         },
