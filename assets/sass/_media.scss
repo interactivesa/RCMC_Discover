@@ -204,7 +204,7 @@
   .homeHeader .homeSwiper .boxHomeSlide h2 {
     font-size: 50px;
   }
-  footer .footer-links ul{
+  footer .footer-links .foot-links ul{
     gap: 80px;
   }
   
@@ -456,6 +456,11 @@
   .details-banner.Landmarks-det .img-box .landMark-det .swiper-button-prev {
     #{$start-direction}: 5%;
   }
+
+  .culture-det:before {
+    background-size: 300px;
+  }
+
 }
 
 
@@ -504,6 +509,8 @@
 
   .know-Mecca{
     padding: 60px 0;
+    background-size: 35%;
+    background-position: 130% 65%;
     .content-box{
       margin: 0;
       margin-bottom: 20px;
@@ -526,7 +533,7 @@
       margin-top: 20px;
     }
   }
-  footer .footer-links ul {
+  footer .footer-links .foot-links ul {
     gap: 30px;
     justify-content: space-around;
   }
@@ -864,14 +871,7 @@
   footer {
     padding-top: 35px;
     padding-bottom: 15px;
-    .footer-social{
-      margin-top: 30px;
-      margin-bottom: 20px;  
-    }
-    .footer-logos{
-      margin-bottom: 20px;
-    }
-    .footer-links ul{
+    .footer-links .foot-links ul{
       gap: 15px;
       justify-content: space-between;
       li{
@@ -880,6 +880,14 @@
         }
       }
     }
+    .footer-social{
+      margin-top: 30px;
+      margin-bottom: 20px;  
+    }
+    .footer-logos{
+      margin-bottom: 20px;
+    }
+
     .copyRights{
       font-size: 14px;
     }
@@ -1004,18 +1012,22 @@
  }
 
  footer {
-  .footer-links ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px 30px;
-  }
-  .footer-social{
-    flex-direction: column;
-    .phone{
-      margin: 0 ;
-      margin-bottom: 10px;
+  .footer-links{
+
+    .foot-links ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px 30px;
+    }
+    .footer-social{
+      flex-direction: column;
+      .phone{
+        margin: 0 ;
+        margin-bottom: 10px;
+      }
     }
   }
+
   .footer-logos{
     flex-direction: column;
     gap: 5px;

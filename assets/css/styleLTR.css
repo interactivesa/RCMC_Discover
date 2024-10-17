@@ -570,12 +570,31 @@ body .swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 footer {
-  padding-top: 68px;
-  padding-bottom: 35px;
-  background-color: #756A64;
+  margin-top: 100px;
 }
 
-footer .footer-links ul {
+footer .footer-links {
+  padding: 48px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: url(../images/shared/footer-shape.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer-links .foot-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -595,13 +614,13 @@ footer .footer-links ul {
   gap: 130px;
 }
 
-footer .footer-links ul li a {
+footer .footer-links .foot-links ul li a {
   font-size: 16px;
   font-family: 'Suisse-B';
   color: #ffffff;
 }
 
-footer .footer-links ul li a.search-footer {
+footer .footer-links .foot-links ul li a.search-footer {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -617,7 +636,7 @@ footer .footer-links ul li a.search-footer {
           justify-content: center;
 }
 
-footer .footer-social {
+footer .footer-links .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,10 +651,9 @@ footer .footer-social {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 65px;
-  margin-bottom: 45px;
 }
 
-footer .footer-social .phone {
+footer .footer-links .footer-social .phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,12 +671,12 @@ footer .footer-social .phone {
   margin-right: 32px;
 }
 
-footer .footer-social .phone .title {
+footer .footer-links .footer-social .phone .title {
   font-size: 12px;
   color: #ffffff;
 }
 
-footer .footer-social .phone .number a {
+footer .footer-links .footer-social .phone .number a {
   font-size: 18px;
   font-family: 'Suisse-B';
   color: #ffffff;
@@ -666,7 +684,7 @@ footer .footer-social .phone .number a {
   display: block;
 }
 
-footer .footer-social .social-links ul {
+footer .footer-links .footer-social .social-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -686,7 +704,7 @@ footer .footer-social .social-links ul {
   gap: 28px;
 }
 
-footer .footer-social .social-links ul li a {
+footer .footer-links .footer-social .social-links ul li a {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -702,94 +720,49 @@ footer .footer-social .social-links ul li a {
           justify-content: center;
 }
 
-footer .footer-social .social-links ul li a img {
+footer .footer-links .footer-social .social-links ul li a img {
   -webkit-transition: .5s;
   transition: .5s;
   max-width: 17px;
   max-height: 18px;
 }
 
-footer .footer-social .social-links ul li a:hover img {
+footer .footer-links .footer-social .social-links ul li a:hover img {
   -webkit-filter: brightness(0);
           filter: brightness(0);
 }
 
-footer .footer-logos {
+footer .footer-white {
+  padding-top: 48px;
+  padding-bottom: 67px;
+  background-color: #ffffff;
+}
+
+footer .footer-white .col-lg-12 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 25px;
-  margin-bottom: 65px;
+  gap: 35px;
 }
 
-footer .copyRights {
+footer .footer-white .img-box {
+  padding: 14px;
+}
+
+footer .footer-white p {
   font-size: 16px;
-  color: #DEDEDE;
+  color: #A3A3A3;
   margin-bottom: 0;
-}
-
-footer .update {
-  margin-top: 10px;
-  margin-bottom: 0;
-  color: #BBB6AC;
-  font-size: 12px;
-}
-
-footer .last-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  gap: 10px;
-  padding-right: 30px;
-}
-
-footer .last-links ul li {
-  padding-right: 12px;
-  position: relative;
-}
-
-footer .last-links ul li a {
-  font-size: 12px;
-  color: #E3E3E3;
-}
-
-footer .last-links ul li::after {
-  content: "|";
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #E3E3E3;
-}
-
-footer .last-links ul li:last-child {
-  padding-right: 0px;
-}
-
-footer .last-links ul li:last-child::after {
-  display: none;
 }
 
 .know-Mecca {
@@ -1524,7 +1497,8 @@ footer .last-links ul li:last-child::after {
           transform: translateX(-7px);
 }
 
-.Tourist-Experiences .swiper-button-prev, .Tourist-Experiences .swiper-rtl .swiper-button-next {
+.Tourist-Experiences .swiper-button-prev, .Tourist-Experiences .swiper-rtl .swiper-button-next,
+.Tourist-Experiences .swiper-button-next, .Tourist-Experiences .swiper-rtl .swiper-button-prev {
   width: 60px;
   height: 60px;
   background-color: #ffffff;
@@ -1543,7 +1517,8 @@ footer .last-links ul li:last-child::after {
   padding: 10px;
 }
 
-.Tourist-Experiences .swiper-button-prev::after, .Tourist-Experiences .swiper-rtl .swiper-button-next::after {
+.Tourist-Experiences .swiper-button-prev::after, .Tourist-Experiences .swiper-rtl .swiper-button-next::after,
+.Tourist-Experiences .swiper-button-next::after, .Tourist-Experiences .swiper-rtl .swiper-button-prev::after {
   content: url(../images/home/swiper-R.svg);
   font-size: inherit;
   width: 9px;
@@ -3552,6 +3527,200 @@ ul.list-with-numbers li::before {
           box-shadow: 0 5px 40px #00000026;
 }
 
+html[lang="en"] {
+  /*
+    en bg media
+  */
+}
+
+html[lang="en"] .navigation-conatiner::before {
+  content: "Beta Version";
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html[lang="en"] .contact-toggle {
+  border-radius: 37px 0 0 37px;
+}
+
+html[lang="en"] .breadcrumb .items li a::after,
+html[lang="en"] .homeHeader .homeSwiper .boxHomeSlide .read-more .arrow-box img,
+html[lang="en"] .weather .content-box .more a img,
+html[lang="en"] .events-activities .more a .iconbox img,
+html[lang="en"] .Tourist-Experiences .more a .iconbox img,
+html[lang="en"] .Mecca-landmarks .more a img,
+html[lang="en"] .events-activities .swiper-button,
+html[lang="en"] .Tourist-Experiences .swiper-button-prev, html[lang="en"] .Tourist-Experiences .swiper-rtl .swiper-button-next, html[lang="en"] .Tourist-Experiences .swiper-button-next, html[lang="en"] .Tourist-Experiences .swiper-rtl .swiper-button-prev,
+html[lang="en"] .details-banner.Landmarks-det .img-box .landMark-det .swiper-button-prev, html[lang="en"] .details-banner.Landmarks-det .img-box .landMark-det .swiper-button-next {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .homeHeader .homeSwiper .boxHomeSlide .read-more:hover .arrow-box {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+html[lang="en"] .weather .content-box .more a:hover img,
+html[lang="en"] .Mecca-landmarks .more a:hover img {
+  -webkit-transform: translateX(7px) scaleX(-1);
+          transform: translateX(7px) scaleX(-1);
+}
+
+html[lang="en"] .events-activities .more a:hover .iconbox,
+html[lang="en"] .Tourist-Experiences .more a:hover .iconbox {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+}
+
+html[lang="en"] .details-banner.Landmarks-det .img-box .landMark-det {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html[lang="en"] .know-Mecca .numbers-sec h4::after {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html[lang="en"] .about-know {
+  background-position: calc(0% - 220px) bottom;
+}
+
+html[lang="en"] .importance {
+  background-position: calc(100% + 220px) 75%;
+}
+
+html[lang="en"] .heritage {
+  background-position: calc(0% - 220px) center;
+}
+
+html[lang="en"] .culture-det:before {
+  background-position: calc(0% - 175px) 85%;
+}
+
+html[lang="en"] .bgGrey-withImg {
+  background-position: calc(0% - 175px) 32%, calc(100% + 175px) 77%;
+}
+
+html[lang="en"] .know-Mecca {
+  background-position: -3% 98%;
+}
+
+html[lang="en"] .way:before {
+  background-position: calc(0% - 175px) 85%;
+}
+
+html[lang="en"] .arrive:before {
+  background-position: calc(100% + 175px) 85%;
+}
+
+html[lang="en"] .nature:before {
+  background-position: calc(0% - 175px) bottom;
+}
+
+html[lang="en"] .geo {
+  background-position: calc(100% + 175px) 130%;
+}
+
+html[lang="en"] .challenges {
+  background-position: calc(0% - 175px) 27%, calc(100% + 175px) 90%;
+}
+
+html[lang="en"] .ourNumbers-details:before {
+  background-position: calc(0% - 200px) 100%;
+}
+
+html[lang="en"] .bgGrey-withImg2:before {
+  background-position: calc(0% - 215px) 31%;
+}
+
+@media (max-width: 1650px) {
+  html[lang="en"] .about-know {
+    background-position: calc(0% - 275px) bottom;
+  }
+  html[lang="en"] .importance {
+    background-position: calc(100% + 275px) 75%;
+  }
+  html[lang="en"] .heritage {
+    background-position: calc(0% - 275px) center;
+  }
+  html[lang="en"] .culture-det:before {
+    background-position: calc(0% - 250px) 85%;
+  }
+  html[lang="en"] .bgGrey-withImg {
+    background-position: calc(0% - 275px) 32%, calc(100% + 275px) 77%;
+  }
+  html[lang="en"] .know-Mecca {
+    background-position: -20% 98%;
+  }
+  html[lang="en"] .way:before {
+    background-position: calc(0% - 300px) 85%;
+  }
+  html[lang="en"] .arrive:before {
+    background-position: calc(100% + 275px) 85%;
+  }
+  html[lang="en"] .nature:before {
+    background-position: calc(0% - 275px) bottom;
+  }
+  html[lang="en"] .geo {
+    background-position: calc(100% + 275px) 130%;
+  }
+  html[lang="en"] .ourNumbers-details:before {
+    background-position: calc(0% - 275px) 90%;
+  }
+  html[lang="en"] .bgGrey-withImg2:before {
+    background-position: calc(0% - 275px) 31%;
+  }
+}
+
+@media (max-width: 1199.99px) {
+  html[lang="en"] .about-know {
+    background-position: calc(0% - 240px) bottom;
+  }
+  html[lang="en"] .importance {
+    background-position: calc(100% + 240px) 75%;
+  }
+  html[lang="en"] .heritage {
+    background-position: calc(0% - 240px) center;
+  }
+  html[lang="en"] .know-Mecca {
+    background-position: -30% 98%;
+  }
+  html[lang="en"] .ourNumbers-details:before {
+    background-position: calc(0% - 300px) 90%;
+  }
+  html[lang="en"] .bgGrey-withImg2:before {
+    background-position: calc(0% - 300px) 31%;
+  }
+}
+
+@media (max-width: 991.99px) {
+  html[lang="en"] .bgGrey-withImg {
+    background-position: calc(0% - 275px) 10%, calc(100% + 275px) 77%;
+  }
+  html[lang="en"] .know-Mecca {
+    background-position: -30% 65%;
+  }
+  html[lang="en"] .challenges {
+    background-position: calc(0% - 245px) 27%, calc(100% + 246px) 75%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  html[lang="en"] .bgGrey-withImg {
+    background-position: calc(0% - 150px) 10%, calc(100% + 150px) 77%;
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 574.98px) {
+  html[lang="en"] .challenges {
+    background-position: calc(0% - 250px) 6%, calc(100% + 255px) 99%;
+  }
+}
+
 @media (min-width: 1700px) {
   .large-container {
     max-width: 1635px;
@@ -3704,7 +3873,7 @@ ul.list-with-numbers li::before {
   .homeHeader .homeSwiper .boxHomeSlide h2 {
     font-size: 50px;
   }
-  footer .footer-links ul {
+  footer .footer-links .foot-links ul {
     gap: 80px;
   }
   .culture-imgs .img-box-grp .first-img {
@@ -3918,6 +4087,9 @@ ul.list-with-numbers li::before {
   .details-banner.Landmarks-det .img-box .landMark-det .swiper-button-prev {
     left: 5%;
   }
+  .culture-det:before {
+    background-size: 300px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -3956,6 +4128,8 @@ ul.list-with-numbers li::before {
   }
   .know-Mecca {
     padding: 60px 0;
+    background-size: 35%;
+    background-position: 130% 65%;
   }
   .know-Mecca .content-box {
     margin: 0;
@@ -3975,7 +4149,7 @@ ul.list-with-numbers li::before {
     padding: 0;
     margin-top: 20px;
   }
-  footer .footer-links ul {
+  footer .footer-links .foot-links ul {
     gap: 30px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -4266,21 +4440,21 @@ ul.list-with-numbers li::before {
     padding-top: 35px;
     padding-bottom: 15px;
   }
+  footer .footer-links .foot-links ul {
+    gap: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-links .foot-links ul li a {
+    font-size: 14px;
+  }
   footer .footer-social {
     margin-top: 30px;
     margin-bottom: 20px;
   }
   footer .footer-logos {
     margin-bottom: 20px;
-  }
-  footer .footer-links ul {
-    gap: 15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer .footer-links ul li a {
-    font-size: 14px;
   }
   footer .copyRights {
     font-size: 14px;
@@ -4385,7 +4559,7 @@ ul.list-with-numbers li::before {
   .reverse-nav .dropdown-menu .dropdown-item {
     padding: 5px 20px !important;
   }
-  footer .footer-links ul {
+  footer .footer-links .foot-links ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -4393,13 +4567,13 @@ ul.list-with-numbers li::before {
             justify-content: center;
     gap: 15px 30px;
   }
-  footer .footer-social {
+  footer .footer-links .footer-social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .footer-social .phone {
+  footer .footer-links .footer-social .phone {
     margin: 0;
     margin-bottom: 10px;
   }
